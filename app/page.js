@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero min-h-screen bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 relative overflow-hidden">
+      <section className="hero min-h-screen bg-linear-to-r from-green-400 via-emerald-500 to-teal-600 relative overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-10 text-6xl animate-bounce">
@@ -82,36 +82,45 @@ export default function Home() {
       </section>
 
       {/* Mission Section */}
-<section id="mission" className="py-16 md:py-20 bg-base-100">
-  <div className="container mx-auto px-4">
-    <div className="text-center max-w-4xl mx-auto">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="text-5xl mb-6">💚</div>
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">Our Mission</h2>
-        <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 px-4">
-          {storeInfo?.mission || "We believe in the power of plants to transform health and the planet. Every product is carefully sourced from ethical suppliers committed to sustainability."}
-        </p>
-        <div className="flex justify-center gap-3 md:gap-4 flex-wrap px-4">
-          {(storeInfo?.values || ['Organic', 'Sustainable', 'Transparent', 'Wellness-Focused']).map((value, i) => (
-            <motion.div 
-              key={i}
-              whileHover={{ scale: 1.1 }}
-              className="badge badge-primary badge-lg p-4 text-sm md:text-base"
+      <section id="mission" className="py-16 md:py-20 bg-base-100">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
             >
-              {value}
+              <div className="text-5xl mb-6">💚</div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                Our Mission
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 px-4">
+                {storeInfo?.mission ||
+                  "We believe in the power of plants to transform health and the planet. Every product is carefully sourced from ethical suppliers committed to sustainability."}
+              </p>
+              <div className="flex justify-center gap-3 md:gap-4 flex-wrap px-4">
+                {(
+                  storeInfo?.values || [
+                    "Organic",
+                    "Sustainable",
+                    "Transparent",
+                    "Wellness-Focused",
+                  ]
+                ).map((value, i) => (
+                  <motion.div
+                    key={i}
+                    whileHover={{ scale: 1.1 }}
+                    className="badge badge-primary badge-lg p-4 text-sm md:text-base"
+                  >
+                    {value}
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
-          ))}
+          </div>
         </div>
-      </motion.div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Features Section */}
       <section className="py-20 bg-base-200">
@@ -158,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
+      <section className="py-20 bg-linear-to-br from-green-50 to-emerald-50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -229,7 +238,7 @@ export default function Home() {
               >
                 <Link href="/items">
                   <div
-                    className={`card bg-gradient-to-br ${category.color} text-white shadow-xl cursor-pointer h-full`}
+                    className={`card bg-linear-to-br ${category.color} text-white shadow-xl cursor-pointer h-full`}
                   >
                     <div className="card-body items-center text-center justify-center">
                       <div className="text-5xl md:text-6xl mb-2">
@@ -322,7 +331,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 bg-gradient-to-r from-green-400 to-emerald-600 text-white relative overflow-hidden">
+      <section className="py-20 bg-linear-to-r from-green-400 to-emerald-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 text-9xl">📧</div>
           <div className="absolute bottom-10 right-10 text-9xl">💌</div>
@@ -431,7 +440,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
+      <section className="py-20 bg-linear-to-br from-emerald-500 to-teal-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
