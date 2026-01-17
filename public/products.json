@@ -1,0 +1,228 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Organic Moringa Powder",
+        "description": "Premium quality moringa powder sourced from sustainable farms. Rich in vitamins, minerals, and antioxidants. Perfect for smoothies and wellness drinks.",
+        "price": 24.99,
+        "category": "Superfoods",
+        "image": "https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?w=500",
+        "rating": 4.8,
+        "reviews": 156,
+        "inStock": true,
+        "benefits": ["Boosts Energy", "Rich in Antioxidants", "Supports Immunity"]
+      },
+      {
+        "id": 2,
+        "title": "Bamboo Toothbrush Set",
+        "description": "Eco-friendly bamboo toothbrush pack of 4. Biodegradable, BPA-free bristles, and plastic-free packaging. Make your daily routine sustainable.",
+        "price": 12.99,
+        "category": "Sustainable Living",
+        "image": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=500",
+        "rating": 4.9,
+        "reviews": 342,
+        "inStock": true,
+        "benefits": ["Zero Waste", "Biodegradable", "Vegan"]
+      },
+      {
+        "id": 3,
+        "title": "Ashwagandha Stress Relief Capsules",
+        "description": "Adaptogenic herb capsules to reduce stress and anxiety naturally. Certified organic, non-GMO, and third-party tested for purity.",
+        "price": 29.99,
+        "category": "Wellness Supplements",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500",
+        "rating": 4.7,
+        "reviews": 289,
+        "inStock": true,
+        "benefits": ["Reduces Stress", "Improves Sleep", "Balances Hormones"]
+      },
+      {
+        "id": 4,
+        "title": "Reusable Silicone Food Storage Bags",
+        "description": "Set of 6 leak-proof silicone bags for zero-waste food storage. Dishwasher safe, freezer safe, and microwave safe. Say goodbye to plastic bags!",
+        "price": 19.99,
+        "category": "Sustainable Living",
+        "image": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=500",
+        "rating": 4.6,
+        "reviews": 178,
+        "inStock": true,
+        "benefits": ["Eco-Friendly", "Reusable", "BPA-Free"]
+      },
+      {
+        "id": 5,
+        "title": "Spirulina Protein Powder",
+        "description": "Pure spirulina powder with 60% protein content. Complete amino acid profile, perfect for plant-based athletes and health enthusiasts.",
+        "price": 34.99,
+        "category": "Superfoods",
+        "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500",
+        "rating": 4.5,
+        "reviews": 124,
+        "inStock": true,
+        "benefits": ["High Protein", "Detoxifying", "Energy Boost"]
+      },
+      {
+        "id": 6,
+        "title": "Herbal Tea Collection Box",
+        "description": "Curated selection of 12 organic herbal teas including chamomile, peppermint, turmeric ginger, and more. Plastic-free tea bags.",
+        "price": 27.99,
+        "category": "Herbal Teas",
+        "image": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=500",
+        "rating": 4.9,
+        "reviews": 267,
+        "inStock": true,
+        "benefits": ["Calming", "Digestive Support", "Organic"]
+      },
+      {
+        "id": 7,
+        "title": "Natural Deodorant Stick",
+        "description": "Aluminum-free deodorant made with coconut oil, shea butter, and essential oils. Effective odor protection without harsh chemicals.",
+        "price": 14.99,
+        "category": "Personal Care",
+        "image": "https://images.unsplash.com/photo-1585058708663-0774ef0c7e4a?w=500",
+        "rating": 4.4,
+        "reviews": 445,
+        "inStock": true,
+        "benefits": ["Aluminum-Free", "Natural Ingredients", "Long-Lasting"]
+      },
+      {
+        "id": 8,
+        "title": "Organic Matcha Green Tea Powder",
+        "description": "Ceremonial grade matcha from Japan. Rich in L-theanine for calm energy and focus. Perfect for lattes, smoothies, and baking.",
+        "price": 32.99,
+        "category": "Superfoods",
+        "image": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=500",
+        "rating": 4.8,
+        "reviews": 398,
+        "inStock": true,
+        "benefits": ["Calm Energy", "Antioxidant Rich", "Focus Enhancer"]
+      },
+      {
+        "id": 9,
+        "title": "Stainless Steel Water Bottle",
+        "description": "Insulated 32oz water bottle keeps drinks cold for 24 hours or hot for 12 hours. Plastic-free, leak-proof design with carrying loop.",
+        "price": 29.99,
+        "category": "Sustainable Living",
+        "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500",
+        "rating": 4.7,
+        "reviews": 521,
+        "inStock": true,
+        "benefits": ["Zero Waste", "Insulated", "Durable"]
+      },
+      {
+        "id": 10,
+        "title": "Plant-Based Protein Bar Variety Pack",
+        "description": "Box of 12 vegan protein bars with flavors like almond butter, chocolate chip, and peanut coconut. 15g protein, no artificial sweeteners.",
+        "price": 24.99,
+        "category": "Snacks",
+        "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=500",
+        "rating": 4.6,
+        "reviews": 234,
+        "inStock": true,
+        "benefits": ["High Protein", "Vegan", "Clean Ingredients"]
+      },
+      {
+        "id": 11,
+        "title": "Beeswax Food Wraps",
+        "description": "Set of 5 reusable beeswax wraps in various sizes. Natural alternative to plastic wrap for food storage. Washable and compostable.",
+        "price": 18.99,
+        "category": "Sustainable Living",
+        "image": "https://images.unsplash.com/photo-1609840113972-02b0ca1d3d82?w=500",
+        "rating": 4.5,
+        "reviews": 167,
+        "inStock": true,
+        "benefits": ["Reusable", "Biodegradable", "Chemical-Free"]
+      },
+      {
+        "id": 12,
+        "title": "Turmeric Curcumin Complex",
+        "description": "High-absorption turmeric supplement with black pepper extract. Supports joint health, reduces inflammation, and boosts immunity.",
+        "price": 26.99,
+        "category": "Wellness Supplements",
+        "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=500",
+        "rating": 4.7,
+        "reviews": 312,
+        "inStock": true,
+        "benefits": ["Anti-Inflammatory", "Joint Support", "Immunity Boost"]
+      },
+      {
+        "id": 13,
+        "title": "Organic Cold-Pressed Coconut Oil",
+        "description": "Virgin coconut oil for cooking, skincare, and haircare. Unrefined, non-GMO, and packaged in glass jars. Multi-purpose wellness essential.",
+        "price": 16.99,
+        "category": "Superfoods",
+        "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500",
+        "rating": 4.8,
+        "reviews": 456,
+        "inStock": true,
+        "benefits": ["Multipurpose", "Organic", "Cold-Pressed"]
+      },
+      {
+        "id": 14,
+        "title": "Meditation Cushion Set",
+        "description": "Eco-friendly meditation cushion and mat made from organic cotton and buckwheat hulls. Supports proper posture for mindfulness practice.",
+        "price": 49.99,
+        "category": "Wellness Accessories",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500",
+        "rating": 4.9,
+        "reviews": 189,
+        "inStock": true,
+        "benefits": ["Ergonomic", "Sustainable Materials", "Meditation Support"]
+      },
+      {
+        "id": 15,
+        "title": "Probiotic Green Smoothie Mix",
+        "description": "Organic superfood blend with probiotics, greens, and digestive enzymes. Just add water or plant milk for a nutrient-packed smoothie.",
+        "price": 39.99,
+        "category": "Superfoods",
+        "image": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=500",
+        "rating": 4.6,
+        "reviews": 278,
+        "inStock": true,
+        "benefits": ["Gut Health", "Nutrient Dense", "Convenient"]
+      }
+    ],
+    "categories": [
+      {
+        "name": "Superfoods",
+        "description": "Nutrient-dense plant-based powders and foods",
+        "icon": "🌿"
+      },
+      {
+        "name": "Sustainable Living",
+        "description": "Eco-friendly alternatives for everyday life",
+        "icon": "♻️"
+      },
+      {
+        "name": "Wellness Supplements",
+        "description": "Natural supplements for holistic health",
+        "icon": "💊"
+      },
+      {
+        "name": "Herbal Teas",
+        "description": "Organic teas for relaxation and health",
+        "icon": "🍵"
+      },
+      {
+        "name": "Personal Care",
+        "description": "Natural and chemical-free body care",
+        "icon": "🧴"
+      },
+      {
+        "name": "Snacks",
+        "description": "Healthy plant-based snacks and bars",
+        "icon": "🥜"
+      },
+      {
+        "name": "Wellness Accessories",
+        "description": "Tools for mindfulness and self-care",
+        "icon": "🧘"
+      }
+    ],
+    "storeInfo": {
+      "name": "GreenVibe Botanics",
+      "tagline": "Nourish Your Body, Nurture the Planet",
+      "mission": "We believe in the power of plants to transform health and the planet. Every product is carefully sourced from ethical suppliers committed to sustainability.",
+      "values": ["Organic", "Sustainable", "Transparent", "Wellness-Focused"]
+    }
+  }
+  
