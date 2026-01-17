@@ -1,19 +1,17 @@
 'use client';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import Cookies from 'js-cookie';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+import { useSession, signOut } from 'next-auth/react';
 import toast from 'react-hot-toast';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const router = useRouter();
   const pathname = usePathname();
+  const { data: session, status } = useSession();
+  const isLoggedIn = status === 'authenticated';
 
   useEffect(() => {
-    setIsLoggedIn(!!Cookies.get('session'));
-    
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
@@ -22,17 +20,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleLogout = () => {
-    Cookies.remove('session');
-    setIsLoggedIn(false);
+  const handleLogout = async () => {
+    await signOut({ callbackUrl: '/' });
     toast.success('Logged out successfully! 👋');
-    router.push('/');
   };
 
   const isActive = (path) => pathname === path;
 
   return (
-    <div className={`navbar sticky top-0 z-50 transition-all duration-300 ${
+    <nav className={`navbar sticky top-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-base-100 shadow-lg' : 'bg-base-100/80 backdrop-blur-md'
     }`}>
       <div className="navbar-start">
@@ -48,7 +44,7 @@ export default function Navbar() {
             {isLoggedIn && <li><Link href="/add-item" className={isActive('/add-item') ? 'active' : ''}>➕ Add Item</Link></li>}
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost normal-case text-xl gap-2">
+        <Link href="/" className="btn btn-ghost text-xl gap-2">
           <span className="text-2xl">🌿</span>
           <span className="hidden sm:inline font-bold text-primary">GreenVibe</span>
         </Link>
@@ -77,21 +73,41 @@ export default function Navbar() {
       </div>
       
       <div className="navbar-end gap-2">
-        {!isLoggedIn ? (
+        {status === 'loading' ? (
+          <span className="loading loading-spinner loading-sm"></span>
+        ) : !isLoggedIn ? (
           <Link href="/login" className="btn btn-primary btn-sm md:btn-md gap-2">
             🔐 Login
           </Link>
         ) : (
-          <div className="flex items-center gap-2">
-            <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-success/20 rounded-full">
-              <span className="text-sm">✓ Logged in</span>
+          <div className="flex items-center gap-3">
+            {/* User Info */}
+            <div className="hidden md:flex items-center gap-2">
+              {session?.user?.image ? (
+                <img 
+                  src={session.user.image} 
+                  alt={session.user.name} 
+                  className="w-8 h-8 rounded-full"
+                />
+              ) : (
+                <div className="avatar placeholder">
+                  <div className="bg-primary text-white rounded-full w-8">
+                    <span className="text-sm">{session?.user?.name?.[0] || session?.user?.email?.[0]}</span>
+                  </div>
+                </div>
+              )}
+              <div className="text-sm">
+                <p className="font-semibold">{session?.user?.name || 'User'}</p>
+                <p className="text-xs text-gray-500">{session?.user?.email}</p>
+              </div>
             </div>
+            
             <button onClick={handleLogout} className="btn btn-outline btn-error btn-sm md:btn-md gap-2">
               🚪 Logout
             </button>
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 }

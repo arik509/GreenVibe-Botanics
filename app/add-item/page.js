@@ -1,10 +1,13 @@
 'use client';
+import { useSession } from 'next-auth/react';
 import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function AddItemPage() {
+    const { data: session } = useSession();
   const [categories, setCategories] = useState([]);
   const [formData, setFormData] = useState({
     title: '',
@@ -72,6 +75,13 @@ export default function AddItemPage() {
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
+
+        {session?.user && (
+            <div className="alert alert-success mb-6">
+              <span>✓ Logged in as: {session.user.name || session.user.email}</span>
+            </div>
+          )}
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
