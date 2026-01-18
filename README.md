@@ -13,6 +13,7 @@ A modern, full-featured e-commerce application built with **Next.js 15**, **Next
 **Live Site:** [https://your-app-name.vercel.app](https://your-app-name.vercel.app)
 
 **Demo Credentials:**
+
 - Email: `admin@greenvibe.com`
 - Password: `green123`
 
@@ -39,6 +40,7 @@ Or login with your Google account!
 ## ✨ Features
 
 ### Core Features
+
 - ✅ **Landing Page with 9 Sections** - Hero, Mission, Features, Stats, Categories, Testimonials, Newsletter, Commitment, and CTA
 - ✅ **NextAuth.js Authentication** - Secure login with Google OAuth and credentials
 - ✅ **Protected Routes** - Middleware-based route protection
@@ -49,7 +51,8 @@ Or login with your Google account!
 - ✅ **Add Product Form** - Admin-only product creation (protected route)
 
 ### UI/UX Features
-- 🎨 **Modern Design** - Beautiful gradients and smooth animations
+
+- 🎨 **Modern Design** - Beautiful linears and smooth animations
 - 📱 **Fully Responsive** - Mobile-first design that works on all devices
 - 🔔 **Toast Notifications** - Real-time feedback for user actions
 - ⚡ **Framer Motion Animations** - Smooth page transitions and hover effects
@@ -58,6 +61,7 @@ Or login with your Google account!
 - 🖼️ **Optimized Images** - Fast loading with Next.js Image optimization
 
 ### Additional Features
+
 - 🔐 **Secure Sessions** - JWT-based session management
 - 👤 **User Profile Display** - Show user info in navbar
 - 📊 **Product Ratings** - Display average ratings and review counts
@@ -70,18 +74,18 @@ Or login with your Google account!
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|----------|-----------|
-| **Framework** | Next.js 15 (App Router) |
-| **UI Library** | React 19 |
-| **Styling** | Tailwind CSS v4, DaisyUI 5.5 |
-| **Authentication** | NextAuth.js with Google OAuth |
-| **Animations** | Framer Motion |
-| **State Management** | React Hooks |
-| **Cookie Management** | NextAuth Session Cookies |
-| **Notifications** | react-hot-toast |
-| **Deployment** | Vercel |
-| **Version Control** | Git & GitHub |
+| Category              | Technology                    |
+| --------------------- | ----------------------------- |
+| **Framework**         | Next.js 15 (App Router)       |
+| **UI Library**        | React 19                      |
+| **Styling**           | Tailwind CSS v4, DaisyUI 5.5  |
+| **Authentication**    | NextAuth.js with Google OAuth |
+| **Animations**        | Framer Motion                 |
+| **State Management**  | React Hooks                   |
+| **Cookie Management** | NextAuth Session Cookies      |
+| **Notifications**     | react-hot-toast               |
+| **Deployment**        | Vercel                        |
+| **Version Control**   | Git & GitHub                  |
 
 ---
 
@@ -90,6 +94,7 @@ Or login with your Google account!
 Here's a comprehensive README.md file for your GreenVibe Botanics project:
 
 text
+
 # 🌿 GreenVibe Botanics - Plant-Based Wellness Store
 
 A modern, full-featured e-commerce application built with **Next.js 15**, **NextAuth.js**, **Tailwind CSS**, and **DaisyUI**. This project showcases a sustainable plant-based wellness store with Google OAuth authentication, product management, and beautiful animations.
@@ -105,6 +110,7 @@ A modern, full-featured e-commerce application built with **Next.js 15**, **Next
 **Live Site:** [https://your-app-name.vercel.app](https://your-app-name.vercel.app)
 
 **Demo Credentials:**
+
 - Email: `admin@greenvibe.com`
 - Password: `green123`
 
@@ -131,6 +137,7 @@ Or login with your Google account!
 ## ✨ Features
 
 ### Core Features
+
 - ✅ **Landing Page with 9 Sections** - Hero, Mission, Features, Stats, Categories, Testimonials, Newsletter, Commitment, and CTA
 - ✅ **NextAuth.js Authentication** - Secure login with Google OAuth and credentials
 - ✅ **Protected Routes** - Middleware-based route protection
@@ -141,7 +148,8 @@ Or login with your Google account!
 - ✅ **Add Product Form** - Admin-only product creation (protected route)
 
 ### UI/UX Features
-- 🎨 **Modern Design** - Beautiful gradients and smooth animations
+
+- 🎨 **Modern Design** - Beautiful linears and smooth animations
 - 📱 **Fully Responsive** - Mobile-first design that works on all devices
 - 🔔 **Toast Notifications** - Real-time feedback for user actions
 - ⚡ **Framer Motion Animations** - Smooth page transitions and hover effects
@@ -150,6 +158,7 @@ Or login with your Google account!
 - 🖼️ **Optimized Images** - Fast loading with Next.js Image optimization
 
 ### Additional Features
+
 - 🔐 **Secure Sessions** - JWT-based session management
 - 👤 **User Profile Display** - Show user info in navbar
 - 📊 **Product Ratings** - Display average ratings and review counts
@@ -162,18 +171,18 @@ Or login with your Google account!
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|----------|-----------|
-| **Framework** | Next.js 15 (App Router) |
-| **UI Library** | React 19 |
-| **Styling** | Tailwind CSS v4, DaisyUI 5.5 |
-| **Authentication** | NextAuth.js with Google OAuth |
-| **Animations** | Framer Motion |
-| **State Management** | React Hooks |
-| **Cookie Management** | NextAuth Session Cookies |
-| **Notifications** | react-hot-toast |
-| **Deployment** | Vercel |
-| **Version Control** | Git & GitHub |
+| Category              | Technology                    |
+| --------------------- | ----------------------------- |
+| **Framework**         | Next.js 15 (App Router)       |
+| **UI Library**        | React 19                      |
+| **Styling**           | Tailwind CSS v4, DaisyUI 5.5  |
+| **Authentication**    | NextAuth.js with Google OAuth |
+| **Animations**        | Framer Motion                 |
+| **State Management**  | React Hooks                   |
+| **Cookie Management** | NextAuth Session Cookies      |
+| **Notifications**     | react-hot-toast               |
+| **Deployment**        | Vercel                        |
+| **Version Control**   | Git & GitHub                  |
 
 ---
 
@@ -209,8 +218,6 @@ greenvibe-botanics/
 ├── .env.local # Environment variables (local)
 ├── .gitignore # Git ignore rules
 └── README.md # Project documentation
-
-
 
 ---
 
@@ -300,3 +307,4 @@ Unsplash for images
 Built with 💚 by Sabir Hossain Arik
 
 ⭐ Star this repo if you find it helpful!
+```
