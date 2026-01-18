@@ -75,7 +75,7 @@ export default function ItemsPage() {
           ></motion.div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-11/12 mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -161,7 +161,7 @@ export default function ItemsPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Search and Sort Bar */}
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <div className="flex-1 relative">

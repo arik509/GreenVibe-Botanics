@@ -29,7 +29,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-11/12 mx-auto">
           <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
